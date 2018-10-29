@@ -1,9 +1,0 @@
-com\springmvc\binder\InitBinderControllerAdvice.class
-com\springmvc\controller\Test.class
-com\springmvc\controller\model\Dept.class
-com\springmvc\propertyeditors\CustomDeptEditor.class
-com\springmvc\controller\TestController.class
-com\springmvc\controller\DataBinderController.class
-com\springmvc\binder\MyWebBindingInitializer.class
-com\springmvc\controller\model\Employee.class
-com\springmvc\test\Machine.class
