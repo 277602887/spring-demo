@@ -1,6 +1,6 @@
 package com.springmvc.binder;
 
-import com.springmvc.controller.model.Dept;
+import com.springmvc.model.Dept;
 import com.springmvc.propertyeditors.CustomDeptEditor;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.ControllerAdvice;

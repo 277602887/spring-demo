@@ -1,6 +1,6 @@
 package com.springmvc.controller;
 
-import com.springmvc.controller.model.Employee;
+import com.springmvc.model.Employee;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;

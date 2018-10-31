@@ -1,6 +1,6 @@
 package com.springmvc.propertyeditors;
 
-import com.springmvc.controller.model.Dept;
+import com.springmvc.model.Dept;
 
 import java.beans.PropertyEditorSupport;
 

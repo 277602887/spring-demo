@@ -1,7 +1,7 @@
 package com.springmvc.controller;
 
-import com.springmvc.controller.model.Dept;
-import com.springmvc.controller.model.Employee;
+import com.springmvc.model.Dept;
+import com.springmvc.model.Employee;
 import com.springmvc.propertyeditors.CustomDeptEditor;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.stereotype.Controller;

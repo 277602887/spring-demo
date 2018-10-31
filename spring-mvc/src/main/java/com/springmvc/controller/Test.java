@@ -1,6 +1,6 @@
 package com.springmvc.controller;
 
-import com.springmvc.controller.model.Employee;
+import com.springmvc.model.Employee;
 import org.springframework.beans.BeanWrapperImpl;
 
 /**
