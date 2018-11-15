@@ -75,6 +75,7 @@
     <mvc:interceptors>
         <mvc:interceptor>
             <mvc:mapping path="/**"/>
+            <mvc:exclude-mapping path="/test/json"/>
             <bean class="com.springmvc.interceptor.MyInterceptor"/>
         </mvc:interceptor>
     </mvc:interceptors>

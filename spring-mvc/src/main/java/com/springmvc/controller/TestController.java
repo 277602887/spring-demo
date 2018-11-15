@@ -14,10 +14,10 @@ import java.util.Map;
  * @Date: Created in 15:43 2018/7/23
  */
 @Controller
-@RequestMapping("/index")
+@RequestMapping("/test")
 public class TestController {
 
-    @RequestMapping("/xmlOrJson")
+    @RequestMapping("/json")
     @ResponseBody
     public Map<String, Object> xmlOrJson() {
         Map<String, Object> map = new HashMap<String, Object>();
