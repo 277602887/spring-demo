@@ -2,10 +2,10 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
-       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:aop="http://www.springframework.org/schema/aop"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
             http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
-            http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+            http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
 
     <context:annotation-config/>
     <context:component-scan base-package="com.springmvc"/>
@@ -80,4 +80,17 @@
         </mvc:interceptor>
     </mvc:interceptors>
 
+    <bean id="customerService" class="com.springmvc.proxy.CustomerService">
+        <property name="name" value="刘宇祥"/>
+        <property name="url" value="http://www.liuyuxiang.com"/>
+    </bean>
+
+    <bean id="customerInterceptor" class="com.springmvc.proxy.CustomerInterceptor"/>
+
+    <bean id="realSubject" class="com.springmvc.proxy.RealSubject" />
+
+    <aop:config>
+        <aop:pointcut id="customerPoint" expression="execution(public * com.springmvc.proxy.CustomerService.*(..)) "/>
+        <aop:advisor advice-ref="customerInterceptor"  pointcut-ref="customerPoint"></aop:advisor>
+    </aop:config>
 </beans>
